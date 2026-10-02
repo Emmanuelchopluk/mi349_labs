@@ -3,40 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel Luk Semantic HTML Portfolio Skeleton</title>
+    <meta name="description" content="Personal portfolio of Emmanuel Luk, an Information Science student at Michigan State University focused on information technology, user experience, and community impact.">
+    <title>Emmanuel Luk | Portfolio</title>
 </head>
 
 <body>
 
     <header>
-        <h1 style="text-align:center;">Emmanuel Luk</h1>
+        <h1>Emmanuel Luk</h1>
 
-        <nav>
-            <a href="/Home">Home</a>
-            <a href="/About">About</a>
-            <a href="/Projects">Projects</a>
-            <a href="/Contact">Contact</a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
 
-        <section id="hero">
-            <img src="ferris global.JPG" width="978" height="550" alt="Hero Image">
+        <!-- Hero / Intro -->
+        <section id="hero" aria-labelledby="hero-heading">
+            <h2 id="hero-heading">Welcome</h2>
+
+            <figure>
+                <img src="ferris global.JPG" width="978" height="550" alt="Emmanuel Luk receiving the Ferris Global Scholarship award">
+                <figcaption>Receiving the Ferris Global Scholarship award.</figcaption>
+            </figure>
+
+            <p>
+                Honored to receive the Ferris Global Scholarship award and grateful for the opportunity to keep turning goals into experiences.
+            </p>
         </section>
 
-        <section id="about">
+        <!-- About -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About</h2>
+
+            <p>
+                My name is Emmanuel Luk. I'm an Information Science student at
+                <a href="https://msu.edu" target="_blank" rel="noopener noreferrer">Michigan State University</a>,
+                and I believe technology is only as good as the people it actually reaches. I'm passionate about
+                information technology, user experience, and how people interact with digital tools. I enjoy
+                exploring ways to make technology more intuitive, accessible, and meaningful for the people who use it.
+            </p>
+
+            <p>
+                I'm currently building my foundation in IT and UX through hands-on projects, coursework, and
+                extracurricular practice.
+            </p>
         </section>
 
-        <section id="projects">
+        <!-- Projects -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+
+            <article aria-labelledby="campaign-heading">
+                <h3 id="campaign-heading">On the Campaign Trail</h3>
+
+                <figure>
+                    <img src="Campaign work.jpg"600" height="400" alt="Community outreach during the Our Water Our Vote campaign">
+                    <figcaption>Community engagement work with Our Water Our Vote in Metro Detroit.</figcaption>
+                </figure>
+
+                <p>
+                    Over the course of my campaign work with Our Water Our Vote in Detroit, I connected with
+                    residents and community members about legislation affecting access to clean, affordable water
+                    and energy. The work took me out of the classroom and into neighborhoods, where listening
+                    mattered as much as speaking. I learned to hold meaningful conversations with people from
+                    different backgrounds, organize around community concerns, and break down complex issues into
+                    conversations people could engage with. The experience showed me the human side of civic work
+                    and taught me that effective advocacy starts with listening and the willingness to knock on
+                    the next door.
+                </p>
+            </article>
+
+            <article aria-labelledby="tanzania-heading">
+                <h3 id="tanzania-heading">Teaching Python in Tanzania</h3>
+
+                <figure>
+                    <img src="rift valley.JPG" width="600" height="400" alt="Emmanuel teaching students in a classroom in Tanzania">
+                    <figcaption>Leading a introductory python lesson during the Tanzania study abroad program.</figcaption>
+                </figure>
+
+                <p>
+                    During a month-long study abroad program in Tanzania, I worked alongside local schools, leading activities, assisting with lessons, and teaching students basic computer skills and introductory Python concepts. What began as a trip I almost talked myself out of became one of the most meaningful experiences of my college career, leaving me with greater confidence, adaptability, and a stronger interest in global community engagement.
+                </p>
+            </article>
         </section>
 
-        <section id="contact">
+        <!-- Contact -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+
+            <p>
+                If you'd like to connect, collaborate, or learn more about my work, feel free to reach out.
+            </p>
+
+            <p>Email: <a href="Personal Email">Lukemman@msu.edu</a></p>
         </section>
 
     </main>
 
     <footer>
+        <p>&copy; 2026 Emmanuel Luk</p>
     </footer>
 
 </body>
