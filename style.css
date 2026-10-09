@@ -1,19 +1,142 @@
+/* ===========================
+   CSS CUSTOM PROPERTIES
+   =========================== */
 :root {
     --primary-bg: #90EE90;
     --secondary-bg: #2AAA8A;
-    --accent-bg: #98FB988;
+    --accent-bg: #98FB98;
     --primary-text: #444;
     --standard-gap: 40px;
 }
 
-header {
-    
-    background-color: var(--secondary-bg);
-}
-main{
+/* ===========================
+   GLOBAL BASE
+   =========================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: var(--primary-text);
     background-color: var(--primary-bg);
+    line-height: 1.6;
 }
 
-footer{
-    background-color:var(--accent-bg) ;
+/* ===========================
+   HEADER + NAV
+   =========================== */
+header {
+    background-color: var(--secondary-bg);
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   MAIN SECTIONS
+   =========================== */
+section {
+    padding: 1.5rem;
+    margin: var(--standard-gap) 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* ===========================
+   FIGURES & IMAGES
+   =========================== */
+figure {
+    margin: 1rem 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* ===========================
+   PROJECT ARTICLES
+   =========================== */
+article {
+    padding: 1rem;
+    border-left: 4px solid var(--secondary-bg);
+    border-radius: 6px;
+    background-color: #fff;
+    margin-bottom: var(--standard-gap);
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+aside {
+    background-color: var(--accent-bg);
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+/* ===========================
+   DETAILS ELEMENT
+   =========================== */
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details p,
+details ul {
+    margin-left: 1rem;
+}
+
+/* ===========================
+   CONTACT SECTION
+   =========================== */
+#contact a {
+    color: var(--secondary-bg);
+    font-weight: bold;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+    background-color: var(--accent-bg);
+    text-align: center;
+    padding: 1rem;
+    margin-top: var(--standard-gap);
 }
