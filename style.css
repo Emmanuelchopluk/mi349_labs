@@ -1,6 +1,4 @@
-/* ===========================
-   CSS CUSTOM PROPERTIES
-   =========================== */
+
 :root {
     --primary-bg: #90EE90;
     --secondary-bg: #2AAA8A;
@@ -9,9 +7,8 @@
     --standard-gap: 40px;
 }
 
-/* ===========================
-   GLOBAL BASE
-   =========================== */
+
+
 body {
     margin: 0;
     padding: 0;
@@ -21,10 +18,12 @@ body {
     line-height: 1.6;
 }
 
-/* ===========================
-   HEADER + NAV
-   =========================== */
+
+/* =========================================
+   HEADER
+   ========================================= */
 header {
+    text-align: center;
     background-color: var(--secondary-bg);
     padding: 1rem;
 }
@@ -33,30 +32,59 @@ header h1 {
     margin: 0;
 }
 
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+nav {
+    background: var(--secondary-bg); 
+    max-width: 100%;
+    border-radius: 30px;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+}
+
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    margin-top: 0.5rem;
+
+    /* FLEXBOX ADDED */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 nav li {
     display: inline-block;
-    margin-right: 1rem;
 }
 
-nav a {
-    text-decoration: none;
+nav ul li a {
     color: #fff;
-    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.8em;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 20px;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* ===========================
-   MAIN SECTIONS
-   =========================== */
+========================================= */
+AI‑GENERATED SECTION — Copilot Documentation
+   Prompt used:
+   "Given my current .css file. Help me adjust my nav section so it's mobile first desgined. 
+
+   AI Output:
+   Copilot rewrote the navigation CSS to be mobile‑first, stacking 
+   nav items vertically on small screens, switching to a horizontal 
+   flex layout at 600px, and expanding spacing and sizing at 900px.
+   This section was authored entirely by Copilot and inserted here 
+   without modifying any HTML.
+
+========================================= */
 section {
     padding: 1.5rem;
     margin: var(--standard-gap) 0;
@@ -69,9 +97,22 @@ section h2 {
     margin-top: 0;
 }
 
-/* ===========================
-   FIGURES & IMAGES
-   =========================== */
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+#projects article {
+    flex: 1 1 100%;
+}
+
+
+/* =========================================
+   IMAGES & FIGURES
+   ========================================= */
 figure {
     margin: 1rem 0;
 }
@@ -88,9 +129,10 @@ figcaption {
     color: #333;
 }
 
-/* ===========================
-   PROJECT ARTICLES
-   =========================== */
+
+/* =========================================
+   ARTICLE CARDS
+   ========================================= */
 article {
     padding: 1rem;
     border-left: 4px solid var(--secondary-bg);
@@ -103,6 +145,8 @@ article h3 {
     margin-top: 0;
 }
 
+
+
 aside {
     background-color: var(--accent-bg);
     padding: 0.5rem;
@@ -110,9 +154,10 @@ aside {
     margin: 1rem 0;
 }
 
-/* ===========================
-   DETAILS ELEMENT
-   =========================== */
+
+/* =========================================
+   DETAILS
+   ========================================= */
 details summary {
     cursor: pointer;
     font-weight: bold;
@@ -123,20 +168,36 @@ details ul {
     margin-left: 1rem;
 }
 
-/* ===========================
-   CONTACT SECTION
-   =========================== */
+
+/* =========================================
+   CONTACT
+   ========================================= */
 #contact a {
     color: var(--secondary-bg);
     font-weight: bold;
 }
 
-/* ===========================
+
+/* =========================================
    FOOTER
-   =========================== */
+   ========================================= */
 footer {
     background-color: var(--accent-bg);
     text-align: center;
     padding: 1rem;
     margin-top: var(--standard-gap);
+}
+
+
+@media (min-width: 600px) {
+    #projects article {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* Desktop — 3 across */
+@media (min-width: 900px) {
+    #projects article {
+        flex: 1 1 calc(33.33% - 20px);
+    }
 }
