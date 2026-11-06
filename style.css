@@ -1,19 +1,22 @@
 
 :root {
     --primary-bg: #90EE90;
-    --secondary-bg: #2AAA8A;
+    --secondary-bg: #124539;
     --accent-bg: #98FB98;
-    --primary-text: #444;
+    --primary-text: white;
     --standard-gap: 40px;
 }
 
-
+img {
+    display: block;
+    margin: 0 auto;
+}
 
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: var(--primary-text);
+    color: var(white);
     background-color: var(--primary-bg);
     line-height: 1.6;
 }
