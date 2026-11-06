@@ -1,7 +1,7 @@
 
 :root {
     --primary-bg: #90EE90;
-    --secondary-bg: #124539;
+    --secondary-bg: #0D302F;
     --accent-bg: #98FB98;
     --primary-text: white;
     --standard-gap: 40px;
@@ -31,10 +31,17 @@ header {
     padding: 1rem;
 }
 
+
 header h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
     margin: 0;
 }
 
+article h3 {
+    color: white;
+}
 
 /* =========================================
    NAVIGATION
