@@ -7,6 +7,14 @@
     --standard-gap: 40px;
 }
 
+body.dark-mode {
+    --primary-bg: #06191a;
+    --accent-bg: #1d5a4f;
+    --surface-bg: #0f2b2a;
+    --text-color: #e6f4ea;
+    --heading-color: #98FB98;
+}
+
 img {
     display: block;
     margin: 0 auto;
@@ -82,19 +90,21 @@ nav a:hover {
     text-decoration: underline;
 }
 
-========================================= */
-AI‑GENERATED SECTION — Copilot Documentation
+/* =========================================
+ AI-GENERATED SECTION - Copilot Documentation
    Prompt used:
    "Given my current .css file. Help me adjust my nav section so it's mobile first desgined. 
-
+ 
    AI Output:
-   Copilot rewrote the navigation CSS to be mobile‑first, stacking 
+   Copilot rewrote the navigation CSS to be mobile-first, stacking 
    nav items vertically on small screens, switching to a horizontal 
    flex layout at 600px, and expanding spacing and sizing at 900px.
    This section was authored entirely by Copilot and inserted here 
+   without modifying any HTML.d here 
    without modifying any HTML.
+   ========================================= */
 
-========================================= */
+
 section {
     padding: 1.5rem;
     margin: var(--standard-gap) 0;
